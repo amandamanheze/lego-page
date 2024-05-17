@@ -1,0 +1,102 @@
+// Navbar.scss
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  font-family: 'Cera Pro';
+  font-weight: 400;
+  z-index: 1000;
+  color: #000000;
+
+  .navbar-brand {
+    width: 48px;
+    height: 48px;
+    top: 16px;
+    left: 197px;
+    margin-left: 197px;
+  }
+}
+
+.navbar-conf {
+  width: 80px;
+  margin-left: 25px;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+
+  
+  &:hover {
+    color: #006CB7;
+  }
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  left: 1450px;
+}
+
+.navbar-frame-menu {
+  display: flex;
+  position: absolute;
+  width: 996px;
+  white-space: nowrap;
+  left: 390px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.navbar-frame-item {
+  display: flex;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  padding: 0;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+  }
+
+  &:hover a {
+    color: #006CB7;
+  }
+}
+
+
+.navbar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  width: 72px;
+
+  &:hover {
+    color: #006CB7;
+  }
+
+  svg {
+    margin-bottom: 0.5rem;
+    display:  flex;
+
+  }
+}

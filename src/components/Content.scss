@@ -1,0 +1,245 @@
+.bloco {
+  background-color: #fff;
+  font-family: 'Cera Pro';
+  color: #000000;
+  max-height: 1080px;
+  height: auto;
+  width: 1920px;
+  margin-top: 10%;
+  width: 100%;
+  // overflow: hidden;
+
+  .inner-container {
+    display: flex;
+    position: relative;
+    height: auto;
+    align-items: center;
+    margin-top: 113px;
+
+    .one-p {
+      margin-left: 813px;
+    }
+  }
+
+  .travel {
+    margin-top: 225px;
+  }
+  
+
+  span {
+    margin-left: 197px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: -8px;
+    white-space: nowrap;
+  }
+
+  p {
+    margin-left: 987px;
+    width: 586px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #525252;
+    margin-bottom: 0;
+  }
+
+  .border {
+    border-top: 1px solid #EE7500;
+    border-bottom: 1px solid #EE7500;
+    display: flex;
+    flex-direction: column;
+    height: 1136px;
+
+    &.border-green {
+      border-top: 1px solid #00963E;
+      border-bottom: 1px solid #00963E;
+      height: 1181px;
+    }
+
+    &.border-blue {
+      border-top: 1px solid #006CB7;
+      border-bottom: 1px solid #006CB7;
+      height: 528px;
+    }
+
+    &.border-gray {
+      border-top: 1px solid #E0E0E0;
+      border-bottom: 1px solid #E0E0E0;
+      height: 528px;
+    }
+
+    &.border-black {
+      border-top: 1px solid #000000;
+      border-bottom: 1px solid #000000;
+      height: 528px;
+    }
+    &.border-pink {
+      border-top: 1px solid #FC36A5;
+      border-bottom: 1px solid #FC36A5;
+      height: 528px;
+    }
+
+    &.border-yellow {
+      border-top: 1px solid #FFD500;
+      border-bottom: 1px solid #FFD500;
+      height: 1136px;
+    }
+
+    &.border-red {
+      border-top: 1px solid #E3000B;
+      border-bottom: 2px solid #E0E0E0;
+      height: 1136px;
+    }
+
+    h3 {
+      margin-left: 197px;
+      margin-top: 80px;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 50px;
+      height: 100px;
+      width: 586px;
+      text-align: left;
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+    }
+
+    .second-p {
+      margin-left: 197px;
+      font-weight: 300;
+      font-size: 20px;
+      color: #000000;
+      margin-bottom: 35px;
+
+      &.margin-p {
+        margin-top: 65px;
+      }
+    }
+
+    button {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 18px 40px;
+      gap: 24px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: left;
+      letter-spacing: 0.02em;
+      
+      width: 221px;
+      height: 64px;
+      margin-left: 197px;
+      
+      border: 1px solid #000000;
+      border-radius: 37px;
+      background-color: #fff;
+      margin-bottom: 179px;
+      &:hover {
+        color: #006CB7;
+        border-color: #006CB7;
+        .arrow {
+          color: #006CB7;
+        }
+      }
+    }
+  }
+
+  .image-container {
+    margin-left: auto;
+    position: absolute;
+    top: 1;
+    right: 0;
+  }
+
+  .image2-container {
+    bottom: 0;
+    left: 0;
+    img {
+      float: left;
+      left: 0px;
+    }
+  }
+
+  .last-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    bottom: 50%;
+    margin-bottom: 0;
+    
+
+    &.one-bloco {
+      bottom: 108%;
+    }
+
+    h3 {
+      margin-left: 1138px;
+      margin-top: 120px;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 50px;
+      height: 100px;
+      width: 586px;
+      text-align: right;
+      letter-spacing: 0.02em;
+      margin-bottom: -40px;
+    }
+
+    .second-p {
+      margin-left: 1138px;
+      font-weight: 300;
+      font-size: 20px;
+      color: #000000;
+      margin-bottom: 40px;
+      text-align: right;
+
+      &.margin-p {
+        margin-top: 120px;
+      }
+    }
+
+    button {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 18px 40px;
+      gap: 24px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      
+      width: 221px;
+      height: 64px;
+      margin-left: 1503px;
+      
+      border: 1px solid #000000;
+      border-radius: 37px;
+      background-color: #fff;
+      margin-bottom: 179px;
+      &:hover {
+        color: #006CB7;
+        border-color: #006CB7;
+        .arrow {
+          color: #006CB7;
+        }
+      }
+      &.custom-button {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
