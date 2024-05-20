@@ -9,8 +9,8 @@ const TopSection = () => {
     <section className="top-section">
       <span className="first">&lt;video autoplay with no sound&gt;</span>
       <span className="second">Welcome to the <br></br>Play Matters Interactive Lookbook</span>
-      <div className="icon1"><Sound /></div>
-      <div className="icon2"><Download /></div>
+      <Sound className="icon1"/>
+      <Download className="icon2"/>
       <span className="scroll">Scroll down</span><Chevrons className="chevron"/>
 
     </section>

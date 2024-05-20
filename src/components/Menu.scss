@@ -7,13 +7,15 @@
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  transform: translateY(-100%);
+  transition: 0.3s ease, visibility 0s linear 0.5s;
   z-index: -1;
   font-family: 'Cera Pro';
 
   &.open {
     opacity: 1;
     visibility: visible;
+    transform: translateY(0);
     transition-delay: 0s;
     z-index: 999;
   }
@@ -154,6 +156,91 @@
         position: absolute;
         width: 140px;
         height: 140px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    .menu-toggle {
+      position: absolute;
+      top: 20px;
+      left: 2px;
+  
+      .x {
+        position: absolute;
+        top: -0.5vh;
+        left: 25vw;
+      }
+  
+      .logo {
+        width: 40px;
+        height: 40px;
+        margin-left: 4vw;
+      }
+    }
+  
+    .vertical-menu {
+      .items, .items-2 {
+        width: 375px;
+        height: 48px;
+        margin: 5px 1px 1px 0;
+      }
+  
+      .items-2 {
+        font-size: 1.125rem;
+        line-height: 33px;
+        margin: 1px 10px 10px 0;
+  
+      }
+  
+      h4 {
+        font-size: 20px;
+        line-height: 1.25rem;
+      }
+  
+      .separator {
+        padding: 0px 15px;
+        height: 38px;
+        margin-left: 2%;
+      
+        .text {
+          font-size: 1.125rem;
+        }
+      
+        .line {
+          flex-grow: 0;
+        }
+      }
+      
+    }
+  
+    .grid-menu {
+      display: grid;
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 0fr);
+      position: relative;
+      left: 0;
+      top: 90vh;
+      width: 100%;
+      background-color: #fff;
+  
+      .box {
+        position: relative;
+        height: 80px;
+        border-bottom: 0.15px solid #e7e5e5;
+        border-right: 0.15px solid #e7e5e5;
+  
+        .inside {
+          position: absolute;
+          display: contents;
+        }
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
       }
     }
   }

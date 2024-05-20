@@ -41,15 +41,15 @@ const Menu = ({ isOpen, toggleMenu }) => {
         </div>
       </div>
       <div className="grid-menu">
-        <div className="box"><div className="inside"><img src={img435} alt="img435" /></div></div>
-        <div className="box"><div className="inside"><img src={img495} alt="img495" /></div></div>
-        <div className="box"><div className="inside"><img src={img496} alt="img496" /></div></div>
-        <div className="box"><div className="inside"><img src={img497} alt="img497" /></div></div>
-        <div className="box"><div className="inside"><img src={img498} alt="img498" /></div></div>
-        <div className="box"><div className="inside"><img src={img499} alt="img499" /></div></div>
-        <div className="box"><div className="inside"><img src={img500} alt="img500" /></div></div>
-        <div className="box"><div className="inside"><img src={img501} alt="img501" /></div></div>
-        <div className="box"><div className="inside"><img src={img502} alt="img502" /></div></div>
+        <div className="box inside"><img src={img435} alt="img435" /></div>
+        <div className="box inside"><img src={img495} alt="img495" /></div>
+        <div className="box inside"><img src={img496} alt="img496" /></div>
+        <div className="box inside"><img src={img497} alt="img497" /></div>
+        <div className="box inside"><img src={img498} alt="img498" /></div>
+        <div className="box inside"><img src={img499} alt="img499" /></div>
+        <div className="box inside"><img src={img500} alt="img500" /></div>
+        <div className="box inside"><img src={img501} alt="img501" /></div>
+        <div className="box inside"><img src={img502} alt="img502" /></div>
       </div>
     </div>
   );

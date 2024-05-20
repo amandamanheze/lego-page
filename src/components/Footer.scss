@@ -1,20 +1,20 @@
 .footer {
   padding: 0.5rem;
   background: #FFFFFF;
-  color: #808080;
-  text-align: center;
-
   font-family: Cera Pro;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  height: 80px;
-  letter-spacing: 0.05em;
-  text-align: center;
-
+  height: 8.8vh;
   position: relative;
-  display: flex;
   bottom: 0;
-  width: 100%;
-  margin-top: 0;
+
+  p {
+    position: relative;
+    width: 60%;
+    text-align: center;
+    color: #808080;
+    font-size: 0.935rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 20px;
+    left: 20%;
+  }
 }

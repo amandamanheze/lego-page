@@ -1,16 +1,16 @@
-// Navbar.scss
 .navbar {
   display: flex;
   align-items: center;
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 8.8vh;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(4px);
   font-family: 'Cera Pro';
   font-weight: 400;
   z-index: 1000;
   color: #000000;
+  top:0;
 
   .navbar-brand {
     width: 48px;
@@ -19,27 +19,19 @@
     left: 197px;
     margin-left: 197px;
   }
-}
 
-.navbar-conf {
-  width: 80px;
-  margin-left: 25px;
-  font-size: 13px;
-  line-height: 13px;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-
-  
-  &:hover {
-    color: #006CB7;
+  .navbar-conf {
+    width: 80px;
+    margin-left: 25px;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    
+    &:hover {
+      color: #006CB7;
+    }
   }
-}
-
-.navbar-menu {
-  display: flex;
-  gap: 0.5rem;
-  position: absolute;
-  left: 1450px;
 }
 
 .navbar-frame-menu {
@@ -78,25 +70,82 @@
   }
 }
 
-
-.navbar-item {
+.navbar-menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: default;
-  font-size: 13px;
-  line-height: 13px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  width: 72px;
+  gap: 0.5rem;
+  position: absolute;
+  left: 75.5vw;
 
-  &:hover {
-    color: #006CB7;
+  .navbar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    width: 72px;
+  
+    &:hover {
+      color: #006CB7;
+    }
+  
+    svg {
+      margin-bottom: 0.5rem;
+      display:  flex;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    position: fixed;
+    
+    .navbar-brand {
+      width: 40px;
+      height: 40px;
+      margin-left: 16px;
+    }
+
+    .menu-icon {
+      width: 32px;
+      height: 27px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .navbar-conf {
+      margin-left: 24px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+    }
   }
 
-  svg {
-    margin-bottom: 0.5rem;
-    display:  flex;
+  .navbar-frame-menu {
+    display: none;
+  }
 
+  .navbar-menu {
+    left: 180px;
+  }
+
+  .navbar-item {
+    order: 3;
+  }
+
+  .navbar-item.search {
+    order: 1;
+  }
+
+  .navbar-item.request {
+    order: 2;
+  }
+
+  .navbar-item.contact {
+    display: none;
   }
 }

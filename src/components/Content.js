@@ -43,7 +43,7 @@ const Content = () => {
       </div>
 
       <div id="travel" className="bloco">
-        <div className="inner-container travel">
+        <div className="inner-container">
           <span>Travel</span>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
@@ -52,7 +52,7 @@ const Content = () => {
           <p className="second-p margin-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.</p>
           <button>View details<Arrow className="arrow" /></button>
           <div className="image-container">
-            <img src={img452} alt="img449" />
+            <img src={img452} alt="img449" className="one-img"/>
           </div>
           <div className="image2-container">
             <img src={img451} alt="img450" />
@@ -66,7 +66,7 @@ const Content = () => {
       </div>
 
       <div id="welcome" className="bloco">
-        <div className="inner-container travel">
+        <div className="inner-container">
           <span>Adults welcome</span>
           <p className="one-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
@@ -75,7 +75,7 @@ const Content = () => {
           <p className="second-p margin-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.</p>
           <button>View details<Arrow className="arrow" /></button>
           <div className="image-container">
-            <img src={img448} alt="img448" />
+            <img src={img448} alt="img448" className="one-img"/>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ const Content = () => {
         </div>
         <div className="border border-gray">
           <div className="image2-container">
-            <img src={img453} alt="img453" />
+            <img src={img453} alt="img453" className="one-img"/>
           </div>
           <div className="last-container one-bloco">
             <h3>Playful ideas for refreshing your space while tapping into your more creative side</h3>
@@ -98,7 +98,7 @@ const Content = () => {
       </div>
 
       <div id="space" className="bloco">
-        <div className="inner-container travel">
+        <div className="inner-container">
           <span>Space</span>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
@@ -107,19 +107,19 @@ const Content = () => {
           <p className="second-p margin-p">In the last 30 years, nothing has taken us deeper into space – or better shaped the way we see the universe – than the Hubble Space Telescope.</p>
           <button>View details<Arrow className="arrow" /></button>
           <div className="image-container">
-            <img src={img463} alt="img463" />
+            <img src={img463} alt="img463" className="one-img"/>
           </div>
         </div>
       </div>
 
       <div id="pop" className="bloco">
-        <div className="inner-container travel">
+        <div className="inner-container">
           <span>Pop Culture</span>
           <p className="one-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div className="border border-pink">
           <div className="image2-container">
-            <img src={img464} alt="img464" />
+            <img src={img464} alt="img464" className="one-img"/>
           </div>
           <div className="last-container one-bloco">
             <h3>Recreate scenes from your favorite movies and TV series</h3>
@@ -153,7 +153,7 @@ const Content = () => {
       </div>
 
       <div id="playing" className="bloco">
-        <div className="inner-container travel">
+        <div className="inner-container">
           <span>Real World Role Playing</span>
           <p className="one-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>

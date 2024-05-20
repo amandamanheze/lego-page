@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand"><a href="/"><img src={logo} alt="Logo" /></a></div>
-      <div className="navbar-conf" onClick={toggleMenu}><MenuIcon />Categories</div>
+      <div className="navbar-conf" onClick={toggleMenu}><MenuIcon className="menu-icon"/>Categories</div>
       <ul className="navbar-frame-menu">
         <li className="navbar-frame-item"><a href="#gifting">Gifting</a></li>
         <li className="navbar-frame-item"><a href="#travel">Travel</a></li>
@@ -27,12 +27,11 @@ const Navbar = () => {
         <li className="navbar-frame-item"><a href="#pop">Pop Culture</a></li>
         <li className="navbar-frame-item"><a href="#toddlers">Toddlers</a></li>
         <li className="navbar-frame-item"><a href="#playing">Real World Role Playing</a></li>
-
       </ul>
       <ul className="navbar-menu">
-        <li className="navbar-item"><Message />Contact us</li>
-        <li className="navbar-item"><Bag /> Request</li>
-        <li className="navbar-item"><Search />Search</li>
+        <li className="navbar-item contact"><Message />Contact us</li>
+        <li className="navbar-item request"><Bag /> Request</li>
+        <li className="navbar-item search"><Search />Search</li>
       </ul>
       <Menu isOpen={menuOpen} toggleMenu={toggleMenu} />
     </nav>
